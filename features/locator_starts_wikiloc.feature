@@ -9,3 +9,4 @@ Feature: locator starts wikiloc
     When I start wikiloc
     Then I should see "Welcome to Wikiloc!"
     And I should see "Enter location:"
+    

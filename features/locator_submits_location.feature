@@ -25,3 +25,15 @@ Feature: locator submits location
     
     | UK       | link         | http://en.wikipedia.org/wiki/UK         |
     | UK       | capital      | London                                  |
+
+Scenario: Asking for the capital of Israel
+    Given I am not yet using wikiloc
+    When I start wikiloc
+    Then I should see "Welcome to Wikiloc!"
+    And I should see "Enter location:"
+    When I type "Israel"
+    And I press enter
+    Then I should see "What do you want to know?"
+    When I type "Capital"
+    And I press enter
+    Then I should see "Jerusalem"

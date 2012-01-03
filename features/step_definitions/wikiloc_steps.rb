@@ -29,6 +29,10 @@ When /^I ask for "([^"]*)"$/ do |data_type|
   @interactor.get_info(data_type)
 end
 
+When /$I press enter$/ do
+  @output.puts "What do you want to know?"
+end
+
 Then /^I should see "([^"]*)"$/ do |message|
   output.messages.should include(message)
 end
