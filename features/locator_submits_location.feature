@@ -28,8 +28,8 @@ Feature: locator submits location
 
 Scenario: Asking for the capital of Israel
     Given I am not yet using wikiloc
-    When I start wikiloc
-    Then I should see "Welcome to Wikiloc!"
+    When I run `bundle exec wikiloc`
+    Then the output should contain "Welcome to wikiloc!"
     And I should see "Enter location:"
     When I type "Israel"
     And I press enter
