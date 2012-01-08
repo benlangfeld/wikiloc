@@ -34,6 +34,6 @@ Scenario: Asking for the capital of Israel
     When I type "Israel"
     And I press enter
     Then the output should contain "What do you want to know?"
-    When I type "Capital"
+    When I type "capital"
     And I press enter
     Then the output should contain "Jerusalem"

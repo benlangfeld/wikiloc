@@ -6,7 +6,7 @@ Feature: locator starts wikiloc
   
   Scenario: start wikiloc
     Given I am not yet using wikiloc
-    When I start wikiloc
-    Then I should see "Welcome to Wikiloc!"
-    And I should see "Enter location:"
+    When I run `wikiloc` interactively
+    Then the output should contain "Welcome to Wikiloc!"
+    And the output should contain "Enter location:"
     

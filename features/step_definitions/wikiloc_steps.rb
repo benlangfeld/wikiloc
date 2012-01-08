@@ -26,7 +26,9 @@ When /^I start wikiloc/ do
 end
 
 When /^I ask for "([^"]*)"$/ do |data_type|
-  @interactor.get_info(data_type)
+  @interactor.set_data_type(data_type)
+  info = @interactor.get_info
+  output.puts info
 end
 
 When /$I press enter$/ do
