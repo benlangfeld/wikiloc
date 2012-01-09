@@ -20,23 +20,10 @@ Given /^the location is "([^"]*)"$/ do |location|
   @interactor.set_location(location)
 end
 
-When /^I start wikiloc/ do
-  @interactor = Wikiloc::Interactor.new(output)
-  @interactor.start
-end
-
 When /^I ask for "([^"]*)"$/ do |data_type|
   @interactor.set_data_type(data_type)
   info = @interactor.get_info
   output.puts info
-end
-
-When /$I press enter$/ do
-  @output.puts "What do you want to know?"
-end
-
-Then /^I should see "([^"]*)"$/ do |message|
-  output.messages.should include(message)
 end
 
 Then /^the data should be "([^"]*)"$/ do |message|

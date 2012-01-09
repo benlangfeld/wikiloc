@@ -31,8 +31,11 @@ module Wikiloc
       data_type = gets.chomp
       set_data_type(data_type)
       info = get_info
-      @output.puts info
-      @output.puts "the #{@data_type} of #{@location} is #{info}"
+      if info != :invalid
+        @output.puts "The #{@data_type} of #{@location} is: #{info}"
+      else
+        @output.puts "Invalid Query. Please try again."
+      end
     end
 
     def get_info
