@@ -216,3 +216,5 @@ Feature: locator submits location
     | Yemen | capital | Sana‘a |
     | Zambia | capital | Lusaka |
     | Zimbabwe | capital | Harare |
+
+    
