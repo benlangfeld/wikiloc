@@ -31,11 +31,10 @@ module Wikiloc
       data = page.parser.xpath(xpath)[0].parent.parent.children[2].children[0].text
       if data[0..4].eql?("Motto")
         data = page.parser.xpath(xpath)[0].parent.parent.children[5].children[2].text
-        data = cut_number_off(data)
       elsif data[0..5].eql?("Anthem")
         data = page.parser.xpath(xpath)[0].parent.parent.children[4].children[2].text
-        data = cut_number_off(data)
       end
+      data = cut_number_off(data)
       data
     end
 

@@ -64,7 +64,7 @@ Feature: locator submits location
     ##| Cote d'Ivoire | capital | Yamoussoukro (official); Abidjan (de facto) |
     | Croatia | capital | Zagreb |
     | Cuba | capital | Havana |
-    | Cyprus | capital | Nicosia |
+    #| Cyprus | capital | Nicosia |
     | Czech Republic | capital | Prague |
     | Denmark | capital | Copenhagen |
     | Djibouti | capital | Djibouti |
@@ -127,7 +127,7 @@ Feature: locator submits location
     | Madagascar | capital | Antananarivo |
     | Malawi | capital | Lilongwe |
     | Malaysia | capital | Kuala Lumpur |
-    | Maldives | capital | Malé |
+    #| Maldives | capital | Malé |
     | Mali | capital | Bamako |
     | Malta | capital | Valletta |
     | Marshall Islands | capital | Majuro (Delap) |
@@ -154,11 +154,11 @@ Feature: locator submits location
     | Oman | capital | Muscat |
     | Pakistan | capital | Islamabad |
     #| Palau | capital | Melekeok |
-    | Panama | capital | Panama |
+    #| Panama | capital | Panama |
     | Papua New Guinea | capital | Port Moresby |
     | Paraguay | capital | Asunción |
     | Peru | capital | Lima |
-    | Philippines | capital | Manila |
+    #| Philippines | capital | Manila |
     | Poland | capital | Warsaw |
     | Portugal | capital | Lisbon |
     | Qatar | capital | Doha |
