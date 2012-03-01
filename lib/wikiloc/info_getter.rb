@@ -5,11 +5,11 @@ module Wikiloc
       @agent = Mechanize.new
       @agent.user_agent_alias = 'Mac Safari'
     end
-    
+
     def page_url
       'http://en.wikipedia.org/wiki/'
     end
-    
+
     def get_info
       @data_type = @data_type.downcase
 
@@ -21,11 +21,11 @@ module Wikiloc
       else
         return :invalid
       end
-      
+
       find_data_in_table(xpath)
 
     end
-      
+
     def find_data_in_table(xpath)
       page = @agent.get(page_url + @location)
       data = page.parser.xpath(xpath)[0].parent.parent.children[2].children[0].text
