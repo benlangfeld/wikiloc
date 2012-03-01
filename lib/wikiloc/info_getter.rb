@@ -39,15 +39,8 @@ module Wikiloc
     end
 
     def cut_number_off(data)
-      string = ""
-      data.each_char do |i|
-        if (i.eql?('0') || i.eql?('1') || i.eql?('2') || i.eql?('3') || i.eql?('4') || i.eql?('5') || i.eql?('6') || i.eql?('7') || i.eql?('8') || i.eql?('9'))
-          break
-        else
-          string = string + i
-        end
-      end
-      string
+      data.chop! while ('0'..'9').any? { |n| data.include? n }
+      data
     end
   end
 end
